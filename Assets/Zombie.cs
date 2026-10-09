@@ -1,3 +1,4 @@
+using OpenAI;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
@@ -8,7 +9,7 @@ public class Zombie : MonoBehaviour
     NavMeshAgent agent;
 
     [SerializeField]
-    Transform player;
+    public Transform player;
 
     // Update is called once per frame
     void FixedUpdate()
@@ -20,6 +21,7 @@ public class Zombie : MonoBehaviour
     {
         if (other.transform.CompareTag("Bullet"))
         {
+            player.GetComponent<PlayerControler>().PlayKillSound();
             Destroy(gameObject);
         }
     }

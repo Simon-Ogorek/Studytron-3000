@@ -1337,7 +1337,7 @@ Transform:
   m_GameObject: {fileID: 2000277214}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 15.63394, y: 0.715, z: 10.40628}
+  m_LocalPosition: {x: 15.63394, y: 0.71500015, z: 10.40628}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1357,14 +1357,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   rb: {fileID: 2000277217}
-  audioSource: {fileID: 0}
+  audioSource: {fileID: 330585548}
   bullet: {fileID: 4676473438188143828, guid: 39204121536e90bc2bd709459616a6a7, type: 3}
   hurtSound: {fileID: 8300000, guid: 17e733e06b7edb45194c663a86e43e66, type: 3}
   upgradeSound: {fileID: 8300000, guid: 33476b3f4adbd8848a8b85dd5ed34b1a, type: 3}
   killSound: {fileID: 8300000, guid: 8acb9e20d4426fbe5bda34aeb0680714, type: 3}
   stats:
     maxHealth: 100
-    speed: 100
+    speed: 1000
     bulletsPerShot: 1
     damagePerBullet: 5
 --- !u!54 &2000277217
@@ -1392,7 +1392,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 0
+  m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!135 &2000277218
 SphereCollider:
