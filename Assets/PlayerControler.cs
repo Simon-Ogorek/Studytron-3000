@@ -241,7 +241,7 @@ namespace OpenAI
                             new ChatMessage()
                             {
                                 Role = "system",
-                                Content = "Your goal is to make true or false questions for these topics, pick a random topic from this list of things and return a true or false question, only basic text, no formatting, no markdown. The list: APT, Remote Access Trojan, backdoor, botnet, cryptojacker, infostealer, keylogger, malvertising, malware, ransomware, rootkit, spyware, Trojan, horse, virus, worm. Your response should be less than two sentences. YOU MUST LEAVE THE LAST CHARACTER OF YOUR RESPONSE EITHER T OR F, NO OTHER CHARACTER IS ACCEPTABLE"
+                                Content = "Your goal is to make true or false definitions for these topics, pick a random topic from this list of things and return a defintion that is either true or not actually accurate (use something another terms definition), only basic text, no formatting, no markdown. The list: APT, Remote Access Trojan, backdoor, botnet, cryptojacker, infostealer, keylogger, malvertising, malware, ransomware, rootkit, spyware, Trojan, horse, virus, worm. Your response should be less than two sentences. YOU MUST LEAVE THE LAST CHARACTER OF YOUR RESPONSE EITHER T OR F, NO OTHER CHARACTER IS ACCEPTABLE"
                             }
                         }
                     };
